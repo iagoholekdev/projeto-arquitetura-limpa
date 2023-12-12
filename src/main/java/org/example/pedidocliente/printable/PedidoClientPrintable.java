@@ -13,4 +13,5 @@ public class PedidoClientPrintable implements Printable<PedidoClienteDTO> {
         System.out.println("Lanche escolhido: " + obj.getPedido().getTipoPedido().getDescricao());
         System.out.println("*******************");
     }
+
 }
