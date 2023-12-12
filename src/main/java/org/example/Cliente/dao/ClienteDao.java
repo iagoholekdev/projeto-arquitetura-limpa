@@ -1,4 +1,4 @@
-package org.example.Cliente.dao.ClienteDAO;
+package org.example.Cliente.dao;
 
 import org.example.Cliente.dto.ClienteDTO;
 import org.example.Cliente.model.Cliente;
