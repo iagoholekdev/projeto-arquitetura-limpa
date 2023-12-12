@@ -2,7 +2,7 @@ package org.example.pedido.dto;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.example.utils.enums.PedidoEnum;
+import org.example.pedido.PedidoEnum;
 
 @Getter
 @Setter

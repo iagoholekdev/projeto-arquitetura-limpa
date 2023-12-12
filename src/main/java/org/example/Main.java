@@ -6,7 +6,7 @@ import org.example.pedidocliente.controller.PedidoClienteController;
 import org.example.pedidocliente.dto.PedidoClienteDTO;
 import org.example.pedidocliente.validators.ValidaTipoDoPedido;
 import org.example.utils.aleatorios.RandomValues;
-import org.example.utils.enums.PedidoEnum;
+import org.example.pedido.PedidoEnum;
 import org.example.utils.resourcestring.ResourceString;
 
 import java.util.Scanner;

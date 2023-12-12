@@ -6,7 +6,7 @@ import org.example.pedido.model.Pedido;
 import org.example.pedido.translator.PedidoTranslator;
 import org.example.pedidocliente.dto.PedidoClienteDTO;
 import org.example.pedidocliente.model.PedidoCliente;
-import org.example.utils.enums.interfaces.Crudable;
+import org.example.utils.interfaces.Crudable;
 
 public class PedidoClienteDao implements Crudable<PedidoClienteDTO, PedidoCliente> {
 

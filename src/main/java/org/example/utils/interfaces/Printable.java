@@ -1,4 +1,4 @@
-package org.example.utils.enums.interfaces;
+package org.example.utils.interfaces;
 
 public interface Printable<T> {
 

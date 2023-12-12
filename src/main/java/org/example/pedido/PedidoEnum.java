@@ -1,4 +1,4 @@
-package org.example.utils.enums;
+package org.example.pedido;
 
 import lombok.Getter;
 import lombok.Setter;
