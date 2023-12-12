@@ -11,4 +11,10 @@ public class ValidaTipoDoPedido {
                 ResourceString.getCachorroQuenteJunto().equalsIgnoreCase(pedido);
     }
 
+    public static boolean isCachorroQuente(String pedido) {
+        return ResourceString.getCachorroQuenteSeparado().equals(pedido)
+                        || ResourceString.getCachorroQuenteJunto().equalsIgnoreCase(pedido)
+                        || ResourceString.getCachorroQuenteTraco().equalsIgnoreCase(pedido);
+    }
+
 }

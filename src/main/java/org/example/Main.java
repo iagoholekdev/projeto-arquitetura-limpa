@@ -7,8 +7,8 @@ import org.example.pedidocliente.dto.PedidoClienteDTO;
 import org.example.pedidocliente.validators.ValidaTipoDoPedido;
 import org.example.utils.aleatorios.RandomValues;
 import org.example.utils.enums.PedidoEnum;
+import org.example.utils.resourcestring.ResourceString;
 
-import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Main {
@@ -51,9 +51,9 @@ public class Main {
             System.out.println("Qual é o seu pedido? Temos cachorro-quente e x-burguer.");
             pedido = myScanner.nextLine();
 
-            if ("x-burguer".equalsIgnoreCase(pedido)) {
+            if (ResourceString.getXBurguerConst().equalsIgnoreCase(pedido)) {
                 pedidoDTO.setTipoPedido(PedidoEnum.XBURGUER);
-            } else if ("cachorro-quente".equals(pedido) || "cachorroquente".equalsIgnoreCase(pedido) || "cachorro quente".equalsIgnoreCase(pedido)) {
+            } else if (ValidaTipoDoPedido.isCachorroQuente(pedido)) {
                 pedidoDTO.setTipoPedido(PedidoEnum.CACHORRO_QUENTE);
             } else {
                 System.out.println("Pedido inválido. Tente novamente.");
@@ -63,6 +63,5 @@ public class Main {
 
         return pedidoDTO;
     }
-
 
 }
